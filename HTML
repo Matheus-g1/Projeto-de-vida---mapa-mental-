@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Mapa Mental - TI</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Centro */
+.central {
+    position: absolute;
+    background: #22c55e;
+    padding: 20px;
+    border-radius: 50%;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ramos */
+.ramo {
+    position: absolute;
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Cores */
+.azul { background: #3b82f6; }
+.verde { background: #10b981; }
+.roxo { background: #8b5cf6; }
+.laranja { background: #f97316; }
+.vermelho { background: #ef4444; }
+.amarelo { background: #eab308; color: black; }
+
+/* Posições */
+.area { top: 10%; left: 50%; transform: translateX(-50%); }
+.profissao { top: 30%; left: 80%; }
+.trabalho { top: 60%; left: 80%; }
+.ambiente { top: 80%; left: 50%; transform: translateX(-50%); }
+.vantagens { top: 60%; left: 5%; }
+.desvantagens { top: 30%; left: 5%; }
+
+/* Linhas */
+.linha {
+    position: absolute;
+    background: white;
+    height: 2px;
+    transform-origin: left;
+}
+</style>
+</head>
+
+<body>
+
+<div class="central">
+    💻 Desenvolvedor
+</div>
+
+<div class="ramo azul area">
+    <b>Área</b><br>
+    Tecnologia
+</div>
+
+<div class="ramo verde profissao">
+    <b>Profissão</b><br>
+    Criar sistemas e apps
+</div>
+
+<div class="ramo roxo trabalho">
+    <b>Trabalho</b><br>
+    Programação
+</div>
+
+<div class="ramo laranja ambiente">
+    <b>Ambiente</b><br>
+    Home Office
+</div>
+
+<div class="ramo vermelho vantagens">
+    <b>Vantagens</b><br>
+    Salário alto
+</div>
+
+<div class="ramo amarelo desvantagens">
+    <b>Desvantagens</b><br>
+    Estresse
+</div>
+
+</body>
+</html>
